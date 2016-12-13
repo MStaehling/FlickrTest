@@ -23,22 +23,22 @@
     <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div class="header">
-    <div class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
+  <md-content layout-padding>
+    <div layout="row" layout-align="center center">
 
-          <a class="navbar-brand" href="#/">flickrTest</a>
-        </div>
+      <h2>Flickr Image Finder</h2>
 
-        <md-button class="md-raised md-primary">Search</md-button>
-      </div>
+      <!-- <md-input-container class="md-block" flex="60">
+        <label>Search for images</label>
+        <input name="name" ng-model="user.name" />
+      </md-input-container>
+      <md-button class="md-raised md-primary" ng-click="main.search()">Search</md-button> -->
+
     </div>
-  </div>
+  </md-content>
 
-  <div class="container">
-    <div ng-view=""></div>
-  </div>
+  <div ng-view=""></div>
+
 
   <div class="footer">
 
