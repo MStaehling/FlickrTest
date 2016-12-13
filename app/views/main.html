@@ -4,11 +4,12 @@
       <label>Search for images</label>
       <input name="name" ng-enter ng-model="searchText" />
     </md-input-container>
-    <md-button class="md-raised md-primary" ng-click="main.search()">Search</md-button>
+    <md-button class="md-raised md-primary" ng-click="main.search(searchText)">Search</md-button>
   </div>
 </md-content>
 <md-content>
-  <div layout="row" layout-align="center center" ng-repeat="">
+  <!-- add ng-repeat -->
+  <div layout="row" layout-align="center center">
     <div></div>
 
   </div>
