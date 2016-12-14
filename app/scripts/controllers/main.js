@@ -12,6 +12,7 @@ angular.module('flickrTestApp')
     var deferred = $q.defer();
     var v = this;
     this.search = function(searchText) {
+      v.photos = [];
       $http.get('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f14826d323490270cacd02d9dc7d5a73&text=' + searchText + '&safe_search=1&per_page=25&format=json&nojsoncallback=1')
         .then(function(res) {
           if (res.status === 200) {
