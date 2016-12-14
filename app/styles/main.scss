@@ -22,8 +22,10 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
+  background-color: grey;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -80,7 +82,7 @@ body {
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {

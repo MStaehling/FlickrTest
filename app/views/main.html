@@ -1,10 +1,17 @@
-<md-content layout-padding>
+<md-content class="header">
   <div layout="row" layout-align="center center">
     <md-input-container class="md-block" flex="60">
       <label>Search for images</label>
       <input name="name" ng-enter="main.search(searchText)" ng-model="searchText" />
     </md-input-container>
     <md-button class="md-raised md-primary" ng-click="main.search(searchText)">Search</md-button>
+  </div>
+</md-content>
+<md-content layout-padding>
+  <div layout="row" layout-align="center center" style="margin-top:100px">
+
+    <h2>Random Flickr Image Finder</h2>
+
   </div>
 </md-content>
 <md-content>
