@@ -2,7 +2,7 @@
   <div layout="row" layout-align="center center">
     <md-input-container class="md-block" flex="60">
       <label>Search for images</label>
-      <input name="name" ng-enter ng-model="searchText" />
+      <input name="name" ng-enter="main.search(searchText)" ng-model="searchText" />
     </md-input-container>
     <md-button class="md-raised md-primary" ng-click="main.search(searchText)">Search</md-button>
   </div>

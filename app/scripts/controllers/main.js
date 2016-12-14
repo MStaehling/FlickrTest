@@ -18,18 +18,12 @@ angular.module('flickrTestApp')
           if (res.status === 200) {
             v.photos = res.data.photos.photo;
             console.log(res.data.photos.photo);
-
-// do another request with new info that fetches photo for each set of data
-// for loop? using id and/or OWNER # to go with searchText
-
-
             deferred.resolve();
           } else {
             deferred.reject();
           }
           return deferred.promise;
         });
-      console.log('searching');
     };
   })
   .directive('ngEnter', function() {
@@ -38,9 +32,7 @@ angular.module('flickrTestApp')
         if (event.which === 13) {
           scope.$apply(function() {
             scope.$eval(attrs.ngEnter);
-            console.log('hi');
           });
-
           event.preventDefault();
         }
       });
