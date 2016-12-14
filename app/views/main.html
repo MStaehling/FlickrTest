@@ -9,8 +9,11 @@
 </md-content>
 <md-content>
   <!-- add ng-repeat -->
-  <div layout="row" layout-align="center center">
-    <div></div>
+  <div layout="row" layout-align="center center" ng-repeat="pic in main.photos">
+    <a href="http://www.flickr.com/photos/{{pic.owner}}/{{pic.id}}" target="_blank">
+      <img src="">
+      <image>{{pic}}</image>
+    </a>
 
   </div>
 </md-content>
