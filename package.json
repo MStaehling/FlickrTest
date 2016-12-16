@@ -41,5 +41,7 @@
   "scripts": {
     "test": "karma start test/karma.conf.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "firebase": "^3.6.4"
+  }
 }
